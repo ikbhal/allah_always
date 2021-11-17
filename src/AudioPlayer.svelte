@@ -10,7 +10,7 @@
   import { onMount } from 'svelte'
 
   export let src
-  
+  export let loop 
   let player
 
   onMount(() => {
@@ -23,6 +23,7 @@
 	<audio
 		bind:this={player}
 		{src}
+        {loop}
 		controls>
 		<track kind="captions" />
 	</audio>
