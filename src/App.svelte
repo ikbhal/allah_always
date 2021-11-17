@@ -14,5 +14,5 @@
 </button>
 
 {#each audioTracks as src}
-  <AudioPlayer {src} {loop}/>
+  <AudioPlayer {src} loop="loop"/>
 {/each}
